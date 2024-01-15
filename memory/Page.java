@@ -19,6 +19,12 @@ public class Page
     this.lastTouchTime = lastTouchTime;
     this.high = high;
     this.low = low;
-  } 	
-
+  }
+  public void clear() {
+    this.inMemTime = 0;
+    this.lastTouchTime = 0;
+    this.R = 0;
+    this.M = 0;
+    this.physical = -1;
+  }
 }

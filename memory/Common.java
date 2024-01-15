@@ -1,29 +1,21 @@
 public class Common {
 
-  static public long s2l ( String s ) 
-  {
-    long i = 0;
-
+  public static long s2l(String s) {
     try {
-      i = Long.parseLong(s.trim());
+      return Long.parseLong(s.trim());
     } catch (NumberFormatException nfe) {
       System.out.println("NumberFormatException: " + nfe.getMessage());
+      return 0;
     }
-
-    return i;
   }
 
-  static public int s2i ( String s ) 
-  {
-    int i = 0;
-
+  public static int s2i(String s) {
     try {
-      i = Integer.parseInt(s.trim());
+      return Integer.parseInt(s.trim());
     } catch (NumberFormatException nfe) {
       System.out.println("NumberFormatException: " + nfe.getMessage());
+      return 0;
     }
-
-    return i;
   }
 
   static public byte s2b ( String s ) 
